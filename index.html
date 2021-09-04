@@ -9,6 +9,8 @@
   <script data-ad-client="ca-pub-7337864595183218" async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
+  <link rel="icon" href="assets/icon.png" />
+
   <link rel="stylesheet" href="style.css">
 
   <title>Offline Text To Speech</title>
@@ -48,7 +50,35 @@
 
       </div>
 
-      <!-- Indicators -->
+      <div id="dropdowns">
+        <div class="optionsDiv">
+          <select name="voiceOptions" id="voiceOptions" onchange="changeVoice(this.value)">
+            <option value="voice1">Daniel's voice</option>
+            <option value="voice7">Samantha's voice</option>
+            <option value="voice3">Alex's voice</option>
+            <option value="voice6">Olivia's voice</option>
+            <option value="voice2">Raj's voice</option>
+            <option value="voice4">Fiona's voice</option>
+            <option value="voice5">Fred's voice</option>
+            <option value="voice8">Tessa's voice</option>
+            <option value="voice9">Victoria's voice</option>
+          </select>
+        </div>
+
+        <div class="optionsDiv">
+          <select name="speedOptions" id="speedOptions" onchange="changeVoiceSpeed(this.value)">
+            <option value="speed1">1x speed</option>
+            <option value="speed0.75">0.75x speed</option>
+            <option value="speed0.5">0.5x speed</option>
+            <option value="speed1.25">1.25x speed</option>
+            <option value="speed1.5">1.5x speed</option>
+            <option value="speed1.75">1.75x speed</option>
+            <option value="speed2">2x speed</option>
+
+          </select>
+        </div>
+      </div>
+
       <div id="indicators">
 
         <div id="repo-links">

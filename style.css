@@ -627,6 +627,58 @@ textarea {
   margin-top: 8px;
 }
 
+.optionsDiv {
+  position: relative;
+  /*Don't really need this just for demo styling*/
+
+  float: left;
+  min-width: 200px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.optionsDiv:after {
+  content: '<>';
+  font: 17px "Consolas", monospace;
+  color: #333;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 11px;
+  top: 14px;
+  padding: 0 0 2px;
+  border-bottom: 1px solid #999;
+  position: absolute;
+  pointer-events: none;
+}
+
+.optionsDiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: 40px;
+  float: right;
+  margin: 5px 0px;
+  padding: 0px 24px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-image: none;
+  border: 1px solid #cccccc;
+  -ms-word-break: normal;
+  word-break: normal;
+  border-radius: 6px;
+}
+
+#dropdowns {
+  margin: 10px;
+}
 
 /* This it the input field when it does not have focus */
 textarea[type=text] {
@@ -642,6 +694,19 @@ textarea[type=text]:focus {
   border: solid 1px rgb(125, 125, 125);
 }
 
+/* This it the input field when it does not have focus */
+select {
+  outline: none;
+  box-shadow: none;
+  border: solid 1px rgb(91, 91, 91);
+}
+
+/* This is for the highlighted color when the input field is in focus */
+select:focus {
+  outline: none;
+  box-shadow: none;
+  border: solid 1px rgb(125, 125, 125);
+}
 
 ::-webkit-scrollbar {
   background-color: rgba(255, 255, 255, 0.4);
