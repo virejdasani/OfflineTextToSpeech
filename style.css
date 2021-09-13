@@ -194,6 +194,10 @@ p {
   p {
     font-size: 20px;
   }
+
+  #app-store-buttons {
+    display: contents;
+  }
 }
 
 /* Mobile Design - Tablet */
@@ -205,9 +209,7 @@ p {
   /* Make sure to show the links once we're on a desktop */
 
   /* Make buttons stack instead */
-  #app-store-buttons {
-    display: contents;
-  }
+/**/
 
   #app-store-buttons p {
     padding: 8px;
